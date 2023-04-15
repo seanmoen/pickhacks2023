@@ -1,0 +1,9 @@
+#For GoogleMaps API key
+*.env
+
+#For helper output json files
+*.json
+
+#For Jupyter notebook helper files
+*_checkpoints
+*.py.swp
