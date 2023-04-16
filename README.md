@@ -12,11 +12,16 @@ Our project uses three different APIs:
 # Setup
 For the Google Maps API file to work, you need a "config.env" that just contains your Google Maps API key on a single line.
 
-For the Twilio API to work, you need a 
+For the Twilio API to work, you need a "api_key.env" that contains the "Secret". An account ID and sid is also needed.
 
 # Process
 First the location of the user is sent to Google Map API, which returns a list of nearby gas stations. Our implementation currently does not read the device location and instead uses a default implementation. For the code example, we used the location of the Gale Bullman Multipurpose Building.
 
-Next, the ESG scores are obtained.
+Most publicly traded companies have an ESG score. ESG stands for Environmental Social Govenernance. We will be focused on the E in ESG. Using the yesg library which pulls scores from the sutanalytics database, our code matches each gas station whithin a certain radius to its appropriate Environmental score. By doing this our users can make the most environmentaly concious choice, and choose the gas staion that is the best for the planet.
 
 Then, the most enviornmentally safe gas station is sent to the user's phone.
+
+# Front end
+By using html, css, we developed an interactive website, where users can do various course of actions - from learning more about us, finding out the impact of vehicle gas emission, we believe this will educate, instruct, and galvanize cleaner energy usage. 
+
+The theme of the websites surrounds nature. With that, we try various ways to capture the users' engagement by changing phrase upon cursor movement. We also employ a search bar, where we you will be given direct access to our platform by simply entering your name and phone number. 
