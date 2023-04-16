@@ -13,3 +13,10 @@ Our project uses three different APIs:
 For the Google Maps API file to work, you need a "config.env" that just contains your Google Maps API key on a single line.
 
 For the Twilio API to work, you need a 
+
+# Process
+First the location of the user is sent to Google Map API, which returns a list of nearby gas stations. Our implementation currently does not read the device location and instead uses a default implementation. For the code example, we used the location of the Gale Bullman Multipurpose Building.
+
+Next, the ESG scores are obtained.
+
+Then, the most enviornmentally safe gas station is sent to the user's phone.
