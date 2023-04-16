@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    width:100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("hiking.jpeg");
+    background-position: center;
+    background-size:cover;
+    position:relative;
+    background-repeat:no-repeat;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+    flex:1;
+    text-align: right;
+}
+
+.links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+.links ul li img{
+    width: 30px;
+    text-align:auto;
+    vertical-align: middle;
+}
+
+.links ul li::after{
+   content:'';
+   width:0%;
+   height:2px;
+   background-color: #E86A33;
+   display:block;
+   margin:auto;
+   transition:0.5s;
+}
+.links ul li:hover::after{
+    content:'';
+    width:100%;
+    height:2px;
+    background-color: #E86A33;
+    display:block;
+    margin:auto;
+ }
+ .front{
+    width:90%;
+    position:absolute;
+    color: white;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+ }
+ .front h1{
+    font-size: 60px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+ }
+ .front p{
+    margin:10px 0px 40px;
+    font-size:20px;
+    text-align: center;
+ }
+.change-text:hover{
+    font-size: 0;
+}
+.change-text:hover:after{
+    content: attr(data-hover);
+    font-size:20px;
+}
+.About-us{
+    text-align: center;
+    margin:auto;
+    font-family: 'Rubik', sans-serif;
+    width: 80%;
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+.About-us h1{
+    font-size: 40px;
+}
+.About-us h3{
+    font-size: 25px;
+}
+.row{
+margin-top: 5%;
+display: flex;
+justify-content: space-between;}
+.person h3{
+    padding-bottom: 25px;
+}
+
+.about-header{
+    width:100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("beach.webp");
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    background-repeat:no-repeat;
+}
+
+.front ul li{
+    margin-left: 435px;
+    margin-right: 435px;
+    background-color: white;
+    color:black;
+    text-align:left;
+    text-indent:15px;
+    list-style: none;
+    padding-top:7px;
+    padding-bottom:7px;
+    font-family: 'Rubik', sans-serif;
+}
+.parent{
+    position:relative;
+    margin:0;
+}
+
+.request-pane{
+    text-align: center;
+    margin:auto;
+    font-family: 'Rubik', sans-serif;
+    width: 80%;
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+.data-input{
+width:100%;
+background-image: linear-gradient(to bottom right, pink, rgb(139, 215, 139))
+}
+#InfoY{
+    border-radius: 20px;
+    border-style: none;
+    background-color:rgb(72, 70, 70);
+    color:white;
+    font-size:12px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 5px;
+    padding-right:5px;
+}
+input[type=text]{
+    width:300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    border-radius: 30px;
+  }
